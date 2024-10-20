@@ -9,6 +9,7 @@ import datetime
 from algorithm import total_milage
 from algorithm import create_hash_map
 
+
 # This will create the class for the main program and user interface
 class Main:
     print('*****************************')

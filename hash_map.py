@@ -15,7 +15,7 @@ class HashMap:
             self.map.append([])
 
     # Inserts a new item into the hash table, using two arguments
-    # Time complexity of (0(n))(worst case), where n is the number of key-value pairs
+    # Time complexity of (O(n))(worst case), where n is the number of key-value pairs
     def insert(self, key, value):
         bucket = hash(key) % len(self.map)
         bucket_list = self.map[bucket]
@@ -33,7 +33,7 @@ class HashMap:
 
     # This will search for a matching key-value pair in the hashmap
     # It will return the item if found,or none if not found
-    # Time complexity of (0(n))(worst case), where n is the number of key-value pairs
+    # Time complexity of (O(n))(worst case), where n is the number of key-value pairs
     def get_hash_value(self, key):
         bucket = hash(key) % len(self.map)
         bucket_list = self.map[bucket]
@@ -43,7 +43,7 @@ class HashMap:
         return None
 
     # This removes an item with matching key from the hash table
-    # Time complexity of (0(n))(worst case), where n is the number of key-value pairs
+    # Time complexity of (O(n))(worst case), where n is the number of key-value pairs
     def delete_hash_value(self, key):
         bucket = hash(key) % len(self.map)
         bucket_list = self.map[bucket]
